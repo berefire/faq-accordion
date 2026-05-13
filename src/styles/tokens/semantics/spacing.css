@@ -4,5 +4,6 @@
         --padding-block-card: var(--spacing-300);
 
         --gap-card: var(--spacing-300);
+        --gap-header-card:  var(--spacing-300);
     }
 }

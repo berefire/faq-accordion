@@ -1,0 +1,6 @@
+@layer tokens {
+    :root {
+        
+        --icon-header-size: var(--sizing-24);
+    }
+}

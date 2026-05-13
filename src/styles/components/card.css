@@ -3,4 +3,19 @@
         background-color: var(--bg-card);  
         border-radius: var(--radius-card); 
     }
+
+    .faq-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--gap-header-card);
+    }
+
+    .icon-header {
+        flex-shrink: 0;
+        block-size: var(--icon-header-size);
+        inline-size: var(--icon-header-size);
+    }
+
+
 }

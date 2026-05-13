@@ -1,0 +1,6 @@
+@layer tokens {
+    :root {
+
+        --sizing-24: calc( 24 / var(--base) * 1rem );
+    }
+}
