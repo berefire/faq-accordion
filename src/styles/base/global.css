@@ -11,9 +11,6 @@
         min-block-size: 100vh;
         display: flex;
         flex-direction: column;
-        background-image: url("/assets/images/background-pattern-mobile.svg");
-        background-repeat: no-repeat;
-        background-position: top right;
     }
 
     @supports (min-block-size: 100dvh) {

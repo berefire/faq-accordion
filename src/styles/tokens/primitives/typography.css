@@ -7,13 +7,17 @@
         /* Font sizes */
 
         --font-size-1: calc( 56 / var(--base) * 1rem );
-        --font-size-2: calc( 18 / var(--base) * 1rem );
-        --font-size-3: calc( 16 / var(--base) * 1rem );
+        --font-size-2: calc( 32 / var(--base) * 1rem );
+        --font-size-3: calc( 18 / var(--base) * 1rem );
+        --font-size-4: calc( 16 / var(--base) * 1rem );
+        --font-size-5: calc( 14 / var(--base) * 1rem );
 
         /* Line heights */
         --line-height-1: 66px;
-        --line-height-2: 21px;  
-        --line-height-3: 24px;  
+        --line-height-2: 38px;
+        --line-height-3: 21px;  
+        --line-height-4: 24px;  
+        --line-height-5: 19px;
 
         /* Font weights */
         --font-weight-400: 400;

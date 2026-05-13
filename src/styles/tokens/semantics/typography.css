@@ -2,5 +2,34 @@
     :root {
 
         --font-family-base: var(--work-sans-family);
+
+        --fs-faq-question: var(--font-size-4);
+        --lh-faq-question: var(--line-height-5);
+
+        --fs-faq-title: var(--font-size-2);
+        --lh-faq-title: var(--line-height-2);
+
+        --fs-faq-answer: var(--font-size-5);
+        --lh-faq-answer: 1.5;
+
+        
+        --fw-regular: var(--font-weight-400);
+        --fw-semi-bold: var(--font-weight-600);
+        --fw-bold: var(--font-weight-700);
+    }
+
+    @media(min-width: 48em){
+        :root {
+
+            --fs-faq-title: var(--font-size-1);
+            --lh-faq-title: var(--line-height-1);
+
+            --fs-faq-question: var(--font-size-3);
+            --lh-faq-question: var(--line-height-3);
+
+            --fs-faq-answer: var(--font-size-4);
+            --lh-faq-answer: var(--line-height-4);
+
+        }
     }
 }

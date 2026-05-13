@@ -1,0 +1,24 @@
+@layer pages {
+    .faq-page {
+        position: relative;
+    }
+
+    .faq-page::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto 0;
+        block-size: var(--bg-image-mobile-size);
+        background-image: url("../../../assets/images/background-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        z-index: 1;    
+    }
+
+    @media(min-width: 30em) {
+        .faq-page::before {
+            background-image: url("../../../assets/images/background-pattern-desktop.svg");
+            block-size: var(--bg-image-desktop-size);
+        }
+    }
+}

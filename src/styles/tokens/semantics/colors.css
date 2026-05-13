@@ -4,5 +4,12 @@
         --bg-primary: var(--purple-100);
         --bg-card: var(--white);
 
+        --bg-border-faq-item: var(--purple-100);
+
+        --fc-faq-title: var(--purple-950);
+        --fc-faq-question: var(--purple-950);
+        --fc-faq-question-hover: var(--violet-600);
+        --fc-faq-answer: var(--purple-600);
+
     }
 }

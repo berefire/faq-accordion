@@ -1,4 +1,4 @@
 @layer components;
 
 @import "@components/attribution.css";
-@import "@components/card.css";
+@import "@components/faq-card.css";

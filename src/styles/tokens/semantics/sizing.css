@@ -2,5 +2,14 @@
     :root {
         
         --icon-header-size: var(--sizing-24);
+        --bg-image-mobile-size: var(--sizing-232);
+        --faq-icon-plus-size: var(--sizing-30);
+        --bg-image-desktop-size: var(--sizing-320);
+    }
+
+    @media(min-width: 48em) {
+        :root {
+            --icon-header-size: var(--sizing-40);
+        }
     }
 }

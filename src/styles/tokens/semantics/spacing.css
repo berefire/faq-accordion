@@ -1,9 +1,21 @@
 @layer tokens {
-    :root {
-        --padding-inline-card: var(--spacing-300);
-        --padding-block-card: var(--spacing-300);
+  :root {
+    --padding-inline-card: var(--spacing-300);
+    --padding-block-card: var(--spacing-300);
+    --padding-block-faq-item: var(--spacing-300);
+    --padding-block-start-faq-answer: var(--spacing-300);
 
-        --gap-card: var(--spacing-300);
-        --gap-header-card:  var(--spacing-300);
+    --gap-card: var(--spacing-300);
+    --gap-header-card: var(--spacing-300);
+    --gap-faq-question: var(--spacing-300);
+  }
+
+  @media (min-width: 48em) {
+    :root {
+      --padding-inline-card: var(--spacing-500);
+      --padding-block-card: var(--spacing-500);
+
+      --gap-card: var(--spacing-400);
     }
+  }
 }
