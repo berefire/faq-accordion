@@ -2,4 +2,10 @@
     :root {
         --radius-card: calc( 8 / var(--base) * 1rem );
     }
+
+    @media(min-width: 48em) {
+        :root {
+            --radius-card: calc( 16 / var(--base) * 1rem );
+        }
+    }
 }
