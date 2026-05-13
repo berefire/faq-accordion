@@ -68,7 +68,7 @@ Users should be able to:
 
 ### 🔗Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/accessible-faq-accordion-with-cube-css--ehWHUoFl-](https://www.frontendmentor.io/solutions/accessible-faq-accordion-with-cube-css--ehWHUoFl-)
 - Live Site URL: [https://berefire.github.io/faq-accordion/](https://berefire.github.io/faq-accordion/)
 
 ---
