@@ -1,0 +1,8 @@
+@layer tokens {
+    :root {
+
+        --bg-primary: var(--purple-100);
+        --bg-card: var(--white);
+
+    }
+}

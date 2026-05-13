@@ -1,0 +1,8 @@
+@layer tokens {
+    :root {
+        --padding-inline-card: var(--spacing-300);
+        --padding-block-card: var(--spacing-300);
+
+        --gap-card: var(--spacing-300);
+    }
+}

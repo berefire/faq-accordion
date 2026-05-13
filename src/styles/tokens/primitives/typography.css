@@ -1,0 +1,25 @@
+@layer tokens {
+    :root {
+
+        /* Font family */
+        --work-sans-family: 'Work Sans', sans-serif;
+
+        /* Font sizes */
+
+        --font-size-1: calc( 56 / var(--base) * 1rem );
+        --font-size-2: calc( 18 / var(--base) * 1rem );
+        --font-size-3: calc( 16 / var(--base) * 1rem );
+
+        /* Line heights */
+        --line-height-1: 66px;
+        --line-height-2: 21px;  
+        --line-height-3: 24px;  
+
+        /* Font weights */
+        --font-weight-400: 400;
+        --font-weight-600: 600;
+        --font-weight-700: 700;
+    
+    }
+
+}

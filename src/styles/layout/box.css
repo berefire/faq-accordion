@@ -1,0 +1,6 @@
+@layer layout {
+    .box--card {
+        padding-inline: var(--padding-inline-card);
+        padding-block: var(--padding-block-card);
+    }
+}

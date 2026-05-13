@@ -9,6 +9,8 @@ export default defineConfig({
 
             "@styles": path.resolve(__dirname, 'src/styles'),
             "@tokens": path.resolve(__dirname, 'src/styles/tokens'),
+            "@primitives": path.resolve(__dirname, 'src/styles/tokens/primitives'),
+            "@semantics": path.resolve(__dirname, 'src/styles/tokens/semantics'),
             "@base": path.resolve(__dirname, "src/styles/base"),
             "@utilities": path.resolve(__dirname, "src/styles/utilities"),
             "@components": path.resolve(__dirname, "src/styles/components"),

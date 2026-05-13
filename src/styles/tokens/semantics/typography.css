@@ -1,0 +1,6 @@
+@layer tokens {
+    :root {
+
+        --font-family-base: var(--work-sans-family);
+    }
+}

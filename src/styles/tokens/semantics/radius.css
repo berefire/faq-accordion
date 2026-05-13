@@ -1,0 +1,5 @@
+@layer tokens {
+    :root {
+        --radius-card: calc( 8 / var(--base) * 1rem );
+    }
+}
