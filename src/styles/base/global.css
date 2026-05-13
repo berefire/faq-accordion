@@ -1,22 +1,28 @@
 @layer base {
+  html {
+    font-family: var(--font-family-base);
+    background-color: var(--bg-primary);
+    -webkit-text-size-adjust: 100%;
+  }
 
-    html {
-        font-family: var(--font-family-base);
-        background-color: var(--bg-primary);
-        -webkit-text-size-adjust: 100%;
-    }
+  html,
+  body {
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
+  @supports (min-block-size: 100dvh) {
     html,
     body {
-        min-block-size: 100vh;
-        display: flex;
-        flex-direction: column;
+      min-block-size: 100dvh;
     }
+  }
 
-    @supports (min-block-size: 100dvh) {
-        html,
-        body {
-            min-block-size: 100dvh;
-        }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      /* Enable smooth scrolling for anchor links */
+      scroll-behavior: smooth;
     }
+  }
 }

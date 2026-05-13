@@ -75,6 +75,17 @@
     font-size: var(--fs-faq-answer);
     color: var(--fc-faq-answer);
     line-height: var(--lh-faq-answer);
+
+    block-size: 0;
+    opacity: 0;
+    transition:
+      block-size 0.4s ease,
+      opacity 0.4s ease;
+  }
+
+  .faq-item[open] .faq-answer {
+    block-size: auto;
+    opacity: 1;
   }
 
   @media (min-width: 48em) {
@@ -84,6 +95,12 @@
 
     .faq-answer {
       max-inline-size: 52ch;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .faq-answer {
+      transition: none;
     }
   }
 }
