@@ -1,6 +1,19 @@
 # Frontend Mentor - FAQ accordion solution
 
-This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![GitHub last commit](https://img.shields.io/github/last-commit/berefire/faq-accordion)
+![Repo size](https://img.shields.io/github/repo-size/berefire/faq-accordion)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
+[![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
+![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
+![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
+
+This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -8,7 +21,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+- [My process](#️my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -16,9 +29,9 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
-## Overview
+## 📖Overview
 
 ### The challenge
 
@@ -29,85 +42,158 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+---
 
-![](./screenshot.jpg)
+### 📸Screenshot
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+#### Mobile (375x914)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+| _Default_ | _Active_ |
+| --------- | -------- |
+| ![Mobile](./screenshots/mobile.png) | ![Mobile Active](./screenshots/mobile-active.png) |
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+#### Tablet (768x914)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+| _Default_ | _Active_ |
+| --------- | -------- |
+| ![Tablet](./screenshots/tablet.png) | ![Tablet Active](./screenshots/tablet-active.png) |
 
-### Links
+#### Desktop (1024x914)
+
+| _Default_ | _Active_ |
+| --------- | -------- |
+| ![Desktop](./screenshots/desktop.png) | ![Desktop Active](./screenshots/desktop-active.png) |
+
+---
+
+### 🔗Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://berefire.github.io/faq-accordion/](https://berefire.github.io/faq-accordion/)
 
-## My process
+---
 
-### Built with
+## ⚙️My process
+
+### 🛠Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Mobile-first workflow
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- CUBE CSS methodology
+- Native `<details>` and `<summary>` elements
+- Accessibility best practices
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+---
 
-### What I learned
+### Architecture and organization
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project follows a component-oriented structure inspired by CUBE CSS principles.
 
-To see how you can add code snippets, see below:
+- Composition classes were used for layout utilities
+- Semantic HTML elements were prioritized before adding classes
+- Component-specific styles were separated from global styles
+- Decorative backgrounds were handled independently from the accordion component
+- Logical CSS properties such as `padding-block` and `border-block-end` were used to improve maintainability and writing-mode support
+
+Example of the accordion structure:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="faq-card box--card cluster--card">
+  <h1 class="faq-title">FAQs</h1>
+
+  <details class="faq-item">
+    <summary class="faq-question">
+      What is Frontend Mentor, and how will it help me?
+    </summary>
+
+    <p class="faq-answer">
+      Frontend Mentor offers realistic coding challenges...
+    </p>
+  </details>
+</section>
 ```
+
+---
+
+### 💡What I learned
+
+While building this project, I practiced creating accessible accordions using native HTML elements instead of relying entirely on JavaScript.
+
+I also improved my understanding of:
+
+- CUBE CSS architecture
+- Decorative backgrounds using pseudo-elements
+- Responsive background image handling
+- Using CSS Grid for text/icon alignment
+- Managing accordion icons with pseudo-elements
+- Working with logical properties in CSS
+
+I learned how to replace the default `<summary>` marker with custom icons:
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.faq-question::after {
+  content: "";
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  background-image: url("/assets/images/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+details[open] .faq-question::after {
+  background-image: url("/assets/images/icon-minus.svg");
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+---
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+### 🚀Continued development
 
-### Continued development
+In future projects, I would like to continue improving:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- CSS architecture and scalability
+- Accessibility patterns for interactive components
+- Advanced responsive design techniques
+- Better separation between layout, utilities, and components
+- Performance optimization for decorative assets and backgrounds
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+---
 
-### Useful resources
+### 📚Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CUBE CSS](https://cube.fyi/) - Helped me better understand composition-first CSS architecture.
+- [MDN - details element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) - Useful for understanding native accordion accessibility behavior.
+- [Every Layout](https://every-layout.dev/) - Great resource for modern layout composition techniques.
+- [MDN - Logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values) - Helped me use modern logical spacing properties effectively.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+---
 
-## Author
+### 🤖AI Collaboration
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+This project was developed with the support of AI-assisted learning and code review tools. AI was used as a collaborative resource for:
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Reviewing HTML semantics and accessibility practices
+- Improving CSS architecture and component organization
+- Refining responsive layout techniques
+- Exploring CUBE CSS patterns and composition strategies
+- Optimizing accordion behavior and custom icon handling
 
-## Acknowledgments
+All final implementation decisions, testing, and code integration were completed manually as part of the learning process.
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+---
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+## 👤Author
+
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
+
+---
+
+## 🙏Acknowledgments
+
+Thanks to Frontend Mentor for providing practical challenges that help developers improve real-world frontend skills.
+
+---
