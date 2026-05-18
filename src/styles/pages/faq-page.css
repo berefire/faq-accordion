@@ -8,7 +8,7 @@
         position: absolute;
         inset: 0 0 auto 0;
         block-size: var(--bg-image-mobile-size);
-        background-image: url("../../../assets/images/background-pattern-mobile.svg");
+        background-image: url("../../assets/images/background-pattern-mobile.svg");
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
@@ -17,7 +17,7 @@
 
     @media(min-width: 30em) {
         .faq-page::before {
-            background-image: url("../../../assets/images/background-pattern-desktop.svg");
+            background-image: url("../../assets/images/background-pattern-desktop.svg");
             block-size: var(--bg-image-desktop-size);
         }
     }
