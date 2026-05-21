@@ -23,6 +23,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Links](#links)
 - [My process](#️my-process)
   - [Built with](#built-with)
+  - [Architecture and organization](#architecture-and-organization)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
